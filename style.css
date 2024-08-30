@@ -1,0 +1,326 @@
+*{
+    text-decoration: none;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2E2E2E;
+    color: #F0F0F0;
+    margin: 0;
+    padding: 0;  
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    background-color: #1A1A1A;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    height: 600px;
+    border:rgb(95, 94, 94) solid 2px;
+    border-radius: 20px;
+    margin-top:17px;
+}
+.profile{
+
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 30px; 
+}
+.profile a{
+    height:150px;
+    width:150px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.profile h2 {
+    margin: 10px 0;
+    color: #FFD700;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #B3B3B3;
+}
+.social-media img{
+    width:25px;
+    height:25px;
+    padding:5px;
+    margin-top:15px;
+}
+
+.main-content {
+    margin-left: 28%;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 75%;
+    margin-right: 5px;
+    border:rgb(95, 95, 95) solid 1px;
+    border-radius : 20px;
+    background-color: #1A1A1A;
+    height:fit-content;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #3d3d3d;
+    z-index: 1000;
+    border:rgb(72, 71, 71) solid 2px;
+    border-radius: 10px 20px 10px 20px;
+    margin: 21px 26px 0px 0px;
+    padding-right:30px;
+}
+
+.nav-menu {
+    list-style: none;
+
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin :5px;
+
+}
+
+.nav-menu li a {
+    color: #F0F0F0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    
+}
+
+.nav-menu li a:hover {
+    color: #FFD700;
+}
+
+.section {
+    display: none; /* Hide all sections by default */
+    padding: 100px 20px;
+    margin-top: 5px;
+}
+
+ .section.active {
+    display:block; /* Show the active section */
+} 
+
+.section h1 {
+    color: #FFD700;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.education{
+    padding:20px ;
+}
+.education-entry{
+    margin-left:10px;
+
+}
+.education-entry li{
+    list-style-type :circle;
+}
+
+.education h2 {
+    margin-bottom: 5px; 
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: 1px solid #646463; 
+    padding-bottom: 20px;  
+}
+#book{
+    border:2px solid #FFD700;
+    border-radius: 5px;
+    Padding : 5px;
+    margin:0px 3px 0px 1px;
+
+}
+.date{
+    color:#FFD700;
+}
+
+.skills-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align:left;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #9c9c9c;
+}
+
+.progress-bar {
+    background-color: #817c7c;
+    border-radius: 20px;
+    height: 8px;
+    width: 100%;
+    position: relative;
+}
+
+.progress {
+    background-color: #df6a26;
+    height: 100%;
+    border-radius: 20px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.btn{
+    border : rgb(22, 7, 187) solid 2px;
+    border-radius: 8px;
+    padding:8px;
+    color:rgb(17, 16, 16);
+    background-color: rgb(43, 43, 140);
+
+}
+.tech b{
+    color: #df6a26;
+}
+.project p{
+    color:#e3e1de;
+}
+.contact-form{
+    border : black solid 1px;
+    width:100%;
+    height:100vh;
+}
+#contact {
+    padding: 2rem;
+    background-color: #181818;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom:1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #676666;
+    border-radius: 5px;
+    background-color: #646463;
+    color:white;
+}
+
+button {
+    display: block;
+    width:200px;
+    height: 40px;
+    padding: 5px ;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:5px 5px 5px 50px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    text-align: center;
+    margin-top: 1rem;
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
