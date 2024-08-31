@@ -16,26 +16,17 @@ function showSection(sectionId) {
 document.addEventListener("DOMContentLoaded", function() {
     showSection('about');
 });
-// Initialize EmailJS with your user ID
-
-(function() {
-    emailjs.init("nikhilrudrarapu210@gmail.com"); // Replace with your actual EmailJS user ID
-})();
-
-// Add form submission event listener
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent the form from submitting the default way
 
-    // Send the email using your specific service and template IDs
-    emailjs.sendForm('service_18y9mqx', 'template_y9pwscf', this)
-    .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Your message has been sent successfully!');
-    }, function(error) {
-        console.log('FAILED...', error);
-        alert('Failed to send your message. Please try again later.');
-    });
+    // These IDs from the previous steps
+    const serviceID = 'service_18y9mqx';
+    const templateID = 'template_uygbozb';
 
-    // Clear the form
-    this.reset();
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            document.getElementById('status').innerText = 'Message Sent Successfully!';
+        }, (err) => {
+            document.getElementById('status').innerText = 'Failed to Send Message. Please Try Again.';
+        });
 });
