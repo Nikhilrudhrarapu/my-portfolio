@@ -6,12 +6,10 @@ function showSection(sectionId) {
     // Loop through sections to hide them
     sections.forEach(function(section) {
         section.classList.remove('active');
-    });
-    
+    });  
     // Show the selected section
     document.getElementById(sectionId).classList.add('active');
 }
-
 // Show the "About" section by default
 document.addEventListener("DOMContentLoaded", function() {
     showSection('about');
