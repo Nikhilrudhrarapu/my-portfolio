@@ -350,6 +350,8 @@ button:hover {
   }
   .profile .name{
     margin:10px;
+    display:flex:
+    flex-direction:column;
   }
   .profile h1{
     margin:10px;
@@ -375,3 +377,4 @@ button:hover {
         padding: 1px 10px;
     }
 }
+     
