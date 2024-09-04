@@ -355,10 +355,10 @@ button:hover {
     margin:10px;
   .profile p{
     margin:10px;
+  }
 }
 @media (max-width: 768px) {
     .nav-menu {
-        display:flex:
         flex-direction: column;
         align-items: center;
         padding: 2px ;
