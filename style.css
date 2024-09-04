@@ -53,6 +53,17 @@ body {
 .profile p {
   font-size: 14px;
   color: #b3b3b3;
+  border:#3f3f3f solid 1px;
+  border-radius: 10px;
+  background-color: #646463;
+  padding:2px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+}
+.profile p:hover{
+  color:black;
+  background-color: rgb(131, 126, 126);
 }
 
 .contact-info p {
@@ -313,6 +324,7 @@ button:hover {
   .container {
     flex-direction: column;
     align-items: center;
+    margin:10px;
     
   }
 
@@ -326,6 +338,19 @@ button:hover {
   }
   .main-content {
     order: 2;
+  }
+  .profile{
+    display:flex;
+    flex-direction: row;
+
+  }
+  .profile img{
+    width: 100px;
+    height: 100px;
+    margin:20px 0px 0px 20px;
+  }
+  .profile .name{
+    margin:20px;
   }
 }
 @media (max-width: 768px) {
