@@ -320,14 +320,11 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
-
   .container {
     flex-direction: column;
     align-items: center;
-    margin:10px;
-    
+    margin:10px;   
   }
-
   .sidebar,
   .main-content {
     width: 100%; 
@@ -342,21 +339,32 @@ button:hover {
   .profile{
     display:flex;
     flex-direction: row;
+    align-items:center;
     padding:10px;
   }
   .profile img{
     width: 100px;
     height: 100px;
+    margin-right:15px;
   }
   .profile .name{
     margin:10px;
     display:flex:
     flex-direction:column;
+    justify-content:center
   }
-  .profile h1{
-    margin:10px;
+  .profile h2{
+    margin:5px 0 0 3px;
+    font-size:20px;
+  }
   .profile p{
-    margin:10px;
+    margin:5px 0 0 3px;
+    font-size:16px;
+  }
+  .contact-info,
+  .social-media {
+    text-align: center;
+    margin-top: 10px;
   }
 }
 @media (max-width: 768px) {
