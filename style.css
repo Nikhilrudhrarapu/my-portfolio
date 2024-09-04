@@ -360,7 +360,8 @@ button:hover {
   .profile p{
     margin:5px 0 0 0;
     font-size:12px;
-    padding:2px;
+    padding:0px;
+    
   }
   .contact-info,
   .social-media {
