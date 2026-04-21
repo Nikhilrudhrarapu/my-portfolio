@@ -18,7 +18,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     event.preventDefault(); // Prevent the form from submitting the default way
 
     // These IDs from the previous steps
-    const serviceID = 'service_18y9mqx';
+    const serviceID = 'service_uk2zia4';
     const templateID = 'template_uygbozb';
 
     emailjs.sendForm(serviceID, templateID, this)
